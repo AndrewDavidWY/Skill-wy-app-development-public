@@ -1,0 +1,4 @@
+interface:
+  display_name: "APP 策划与交付"
+  short_description: "从四端阅读器真实修复中复用内容契约、交互状态、离线更新与验收方法"
+  default_prompt: "使用 $wy-app-development 接手本次 W.Y. APP 修改，先确认版本与证据，再制定最小修复和分层验收。"

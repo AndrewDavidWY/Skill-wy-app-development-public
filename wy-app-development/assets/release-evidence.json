@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "",
+  "source": {"platform": "", "version": "", "build": "", "revision_or_sha256": ""},
+  "checks": [
+    {"stage": "production_logic", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "data_integration", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "ui", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "signed_build", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "device_installation", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "device_launch_and_data", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "remote_release", "status": "not_run", "evidence": [], "limitations": []},
+    {"stage": "archive_verification", "status": "not_run", "evidence": [], "limitations": []}
+  ],
+  "not_performed": [],
+  "rollback": ""
+}

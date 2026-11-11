@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-11T14:13:02.368262+00:00",
+  "input_archive": "iOS-0.6.10-Build56",
+  "execution_host": "macOS arm64",
+  "checks": [
+    {
+      "name": "figure-covers",
+      "status": "passed",
+      "exit_code": 0,
+      "scenarios": 16,
+      "assertions": 39,
+      "sources": [
+        {
+          "path": "WYReader/ReaderFigureCovers.swift",
+          "sha256": "3f5f2072fef1e08ba4985d1dc5b5c7eaea4cf76fece4b2b9108bf09e27c75e81"
+        },
+        {
+          "path": "WYReader/Library.swift",
+          "sha256": "80626e1d6999984c535b0237e9a2a2e2c6848e09668bbf8c860c997efd1ac15c"
+        },
+        {
+          "path": "tools/test-figure-covers.py",
+          "sha256": "2ed297fcc4b9996af87f43c9eac62a56c25f1de65cb4bb7892b067f9af5425e5"
+        },
+        {
+          "path": "tools/test-figure-covers.swift",
+          "sha256": "74933260b46390c25ae250de7b5630b58403330e5d04ff18887014ee15242696"
+        }
+      ]
+    },
+    {
+      "name": "discovery-refresh",
+      "status": "passed",
+      "exit_code": 0,
+      "scenarios": null,
+      "assertions": 8,
+      "sources": [
+        {
+          "path": "WYReader/Library.swift",
+          "sha256": "80626e1d6999984c535b0237e9a2a2e2c6848e09668bbf8c860c997efd1ac15c"
+        },
+        {
+          "path": "tools/test-discovery-refresh.py",
+          "sha256": "2b688fa658a1a6b2427c2f399ad448051f8118588c2a5517606274b07c2c1e92"
+        }
+      ]
+    },
+    {
+      "name": "profile-scroll",
+      "status": "passed",
+      "exit_code": 0,
+      "scenarios": 19,
+      "assertions": 448,
+      "sources": [
+        {
+          "path": "WYReader/ProfileScrollGeometry.swift",
+          "sha256": "6c51e22c098ce02d4803ebdafbe72fb03fa65c07c7725764de2338e9d34da90d"
+        },
+        {
+          "path": "tools/test-profile-scroll.py",
+          "sha256": "5a5cd44838bf2038a8dbfc7897de78e1630e86d0b11400833fbc44a0df10cfe1"
+        },
+        {
+          "path": "tools/test-profile-scroll.swift",
+          "sha256": "4a755bbe927364b56a0c4c2e095de8f922018f4dd03f1f288ef978802513c92b"
+        }
+      ]
+    },
+    {
+      "name": "startup-sequence",
+      "status": "passed",
+      "exit_code": 0,
+      "scenarios": 13,
+      "assertions": 343,
+      "sources": [
+        {
+          "path": "WYReader/StartupSequenceState.swift",
+          "sha256": "1c81635d18250ce43da9159142418569ad6f7a25767faea3d70cddf142cfd344"
+        },
+        {
+          "path": "tools/test-startup-sequence.py",
+          "sha256": "f57c1a195e54d3260faba70a7590e6eab733c8a75414b9691f1a4447cebf889d"
+        },
+        {
+          "path": "tools/test-startup-sequence.swift",
+          "sha256": "4213fd73ab73f5cb0d42b27672b766968407d195ba51488c29b7594ca657d9e4"
+        }
+      ]
+    },
+    {
+      "name": "music-note",
+      "status": "passed",
+      "exit_code": 0,
+      "scenarios": 9,
+      "assertions": 426,
+      "sources": [
+        {
+          "path": "WYReader/MusicNoteRotationState.swift",
+          "sha256": "c2b61e0218e2607e72a7dbd2d4bc72b5e4aaba8fac2ae195327d1ff7d53db195"
+        },
+        {
+          "path": "tools/test-music-note.py",
+          "sha256": "e318ec78f6918628ebebd872529c5376699c71d71a1ea0e85f07d4df629985db"
+        },
+        {
+          "path": "tools/test-music-note.swift",
+          "sha256": "bc94a5b73142fc02694ae73adecf9015ca7e05855a0bcc1598bbf83f1b3e3cfc"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only standalone production-logic tests rerun; no app UI, installation, device, audio, battery or other-platform dynamic tests.",
+    "Some historical runners contain older version/host labels; actual input source hashes below identify this run."
+  ],
+  "skill_validation": {
+    "frontmatter": "passed",
+    "relative_links": "passed",
+    "json_parse": "passed",
+    "privacy_pattern_scan": "passed",
+    "independent_behavior_review": {
+      "scenarios": 2,
+      "status": "passed_after_revision",
+      "revisions": [
+        "Explicit current-article language switch is allowed; preserve old locale position and disclose approximate mapping.",
+        "macOS interface-language pageKey may reload; verify preservation separately.",
+        "Serialize request-ownership check and commit; async writes need versioned candidates and recheck."
+      ]
+    }
+  }
+}
